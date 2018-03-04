@@ -1,0 +1,1 @@
+cp config-development ~/.kube/config
