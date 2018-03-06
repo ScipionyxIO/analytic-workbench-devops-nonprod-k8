@@ -1,5 +1,11 @@
 # Analytic Workbench DevOps - Kubernetes
 
+| Version | Travis | 
+|:--------|:------:|
+| Master  | [![Build Status](https://travis-ci.org/ScipionyxIO/analytic-workbench-devops-nonprod-k8.svg?branch=master)](https://travis-ci.org/ScipionyxIO/analytic-workbench-devops-nonprod-k8) | 
+| 0.0.1   | [![Build Status](https://travis-ci.org/ScipionyxIO/analytic-workbench-devops-nonprod-k8.svg?branch=0.0.1)](https://travis-ci.org/ScipionyxIO/analytic-workbench-devops-nonprod-k8) |
+
+
 # Install Kubectl
 In order to install kubeclient follow the instructions from https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-homebrew-on-macos.
 
