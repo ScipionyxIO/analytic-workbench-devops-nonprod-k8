@@ -9,7 +9,7 @@ branches:
     - 0.0.1
 
 before_install:
-  - cp config/config-development ~/.kube/config
+  - cp config/config-development $HOME/.kube/config
   - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
