@@ -18,4 +18,6 @@ before_install:
 install: true
 
 script:
-  - kubectl get all
+  - kubectl create -f development/namespaces.yaml
+  - kubectl create -f development/elastic.yaml
+  - kubectl create -f development/ingress.yaml
