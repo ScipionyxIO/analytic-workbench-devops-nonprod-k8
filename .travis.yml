@@ -1,0 +1,20 @@
+sudo: false
+
+notifications:
+  email:
+    - renato.mendes.1123@gmail.com
+
+branches:
+  only:
+    - 0.0.1
+
+before_install:
+  - cp config-development ~/.kube/config
+  - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  - chmod +x ./kubectl
+  - sudo mv ./kubectl /usr/local/bin/kubectl
+
+install: true
+
+script:
+  - kubectl get all
