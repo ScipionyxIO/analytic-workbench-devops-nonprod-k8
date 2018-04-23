@@ -19,5 +19,5 @@ install: true
 
 script:
   - kubectl create -f development/namespaces.yaml
-  - kubectl create -f development/elastic.yaml
-  - kubectl create -f development/ingress.yaml
+  #- kubectl create -f development/elastic.yaml
+  #- kubectl create -f development/ingress.yaml
